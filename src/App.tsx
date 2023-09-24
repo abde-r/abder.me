@@ -9,6 +9,8 @@ import { Blog2 } from './pages/Blog2';
 import { Blog1 } from './pages/Blog1';
 import './index.scss'
 
+// const BASE_URL = `http://localhost:4173/stronk.me/`
+
 export const App = () => {
   return (
     <div className="App">
