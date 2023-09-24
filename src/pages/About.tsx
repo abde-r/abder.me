@@ -4,7 +4,7 @@ import leetcode from '../assets/leetcode.png'
 import codeforces from '../assets/codeforces.png'
 import codingame from '../assets/codingame.png'
 
-const paragraph1 = `My name is Abderrahman, and I'm a 0x16 years-old(20) software engineering student based in Morocco,
+const paragraph1 = `My name is Abderrahman, and I'm a 0x16 years-old(22) software engineering student based in Morocco,
                     alumnus of `
 const paragraph2 = `I have a passion for backend development and
                     thoroughly enjoy the challenges that come with it. I find joy in the intricate art of Problem-solving. 
@@ -37,9 +37,9 @@ export const About = () => {
                     <p>{ paragraph2 }</p>
                     <p className='sm:text mt-3'>* some of the Problem solving challenges:</p>
                     <div className="p_solvingLinks max-w-[100%] w-full grid grid-cols-3 gap-1" style={{ 'marginTop': '25px'}}>
-                        <a style={{backgroundImage: `url(${leetcode})`}} className='max-w-[15%] max-h-[10%] rounded-md flex  content-div2' href={ 'https://leetcode.com/stronk/' } target='_blank'></a>
-                        <a style={{backgroundImage: `url(${codeforces})`}} className='max-w-[15%] max-h-[10%] rounded-md flex  content-div2' href={ 'https://codeforces.com/profile/stronk' } target='_blank'></a>
-                        <a style={{backgroundImage: `url(${codingame})`}} className='max-w-[15%] max-h-[10%] rounded-md flex  content-div2' href={ 'https://www.codingame.com/profile/f2fcbf8c06112436da6c14c7ebf7e5b37294674' } target='_blank'></a>
+                        <p>leetcode<a style={{backgroundImage: `url(${leetcode})`}} className='max-w-[15%] max-h-[10%] rounded-md flex  content-div2' href={ 'https://leetcode.com/stronk/' } target='_blank'></a></p>
+                        <p>codeforces<a style={{backgroundImage: `url(${codeforces})`}} className='max-w-[15%] max-h-[10%] rounded-md flex  content-div2' href={ 'https://codeforces.com/profile/stronk' } target='_blank'></a></p>
+                        <p>codingame<a style={{backgroundImage: `url(${codingame})`}} className='max-w-[15%] max-h-[10%] rounded-md flex  content-div2' href={ 'https://www.codingame.com/profile/f2fcbf8c06112436da6c14c7ebf7e5b37294674' } target='_blank'></a></p>
                     </div>
                 </div>
             </div>
