@@ -41,3 +41,54 @@
     hsla(234, 59%, 34%, 0.8)
   )!important;
 }
+
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh; /* Ensures the .App div takes the full viewport height */
+  background-color: #0a192f; /* Set your desired background color */
+}
+.p_solvingLinks {
+  margin: 25px 0;
+}
+
+.p_solivingLink {
+  display: flex;
+  margin: 10px;
+
+  p {
+    color: #db2777e0;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 0 10px;
+  }
+
+  // a {
+  //   width: 10%;
+  //   cursor:default;
+  // }
+
+  img {
+    width: 40px;
+    height: 40px;
+    // cursor: pointer;
+  }
+}
+
+// .projects {
+//   width: 90%;
+// }
+.projectLinkIcon {
+  border-radius: 5px;
+    background-color: #133a73ba;
+    color: #db2777e0;
+    padding: 5px;
+}

@@ -24,14 +24,14 @@ export const Blog = () => {
   ];
 
   return (
-    <div id='blog' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div id='blog' className='w-full h-screen text-gray-300 px-5'>
       <div className='flex flex-col justify-center items-center w-full h-full'>
         <p className='text-4xl font-bold inline border-b-4 border-pink-600'>Blog</p>
-        <div className='grid sm:grid-cols-1 md:grid-cols-1 gap-1'>
+        <div className='grid sm:grid-cols-1 md:grid-cols-1 gap-1 my-3'>
           {blogs.map((blog, index) => (
-            <Link to={`blog`+blog.id}>
-                <div key={index} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div2 relative' >
-                <div className='w-1/3'>
+            <Link to={`blog`+blog.id} key={index}>
+                <div  className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto my-2 relative h-full' >
+                <div className='w-1/3 h-full'>
                     <img src={blog.imageSrc} className='rounded-l-md object-cover h-full w-full max-h-48' />
                 </div>
                 <div className='w-2/3 p-4'>

@@ -16,7 +16,7 @@ const paragraph2 = `I have a passion for backend development and
 
 export const About = () => {
   return (
-    <div id='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div id='about' className='w-full text-gray-300 px-5'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
                 <div className='sm:text-center pb-20 pl-4'>
@@ -36,10 +36,19 @@ export const About = () => {
                     </p>
                     <p>{ paragraph2 }</p>
                     <p className='sm:text mt-3'>* some of the Problem solving challenges:</p>
-                    <div className="p_solvingLinks max-w-[100%] w-full grid grid-cols-3 gap-1" style={{ 'marginTop': '25px'}}>
-                        <p>leetcode<a style={{backgroundImage: `url(${leetcode})`}} className='max-w-[15%] max-h-[10%] rounded-md flex  content-div2' href={ 'https://leetcode.com/stronk/' } target='_blank'></a></p>
-                        <p>codeforces<a style={{backgroundImage: `url(${codeforces})`}} className='max-w-[15%] max-h-[10%] rounded-md flex  content-div2' href={ 'https://codeforces.com/profile/stronk' } target='_blank'></a></p>
-                        <p>codingame<a style={{backgroundImage: `url(${codingame})`}} className='max-w-[15%] max-h-[10%] rounded-md flex  content-div2' href={ 'https://www.codingame.com/profile/f2fcbf8c06112436da6c14c7ebf7e5b37294674' } target='_blank'></a></p>
+                    <div className="p_solvingLinks">
+                        <div className="p_solivingLink">
+                            <img src={ `${leetcode}` } />
+                            <a href={ 'https://leetcode.com/stronk/' } target='_blank'><p>* leetcode</p></a>
+                        </div>
+                        <div className="p_solivingLink">
+                            <img src={ `${codeforces}` } />
+                            <a href={ 'https://codeforces.com/profile/stronk' } target='_blank'><p>* codeforces</p></a>
+                        </div>
+                        <div className="p_solivingLink">
+                            <img src={ `${codingame}` } />
+                            <a href={ 'https://www.codingame.com/profile/f2fcbf8c06112436da6c14c7ebf7e5b37294674' } target='_blank'><p>* codingame</p></a>
+                        </div>
                     </div>
                 </div>
             </div>

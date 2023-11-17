@@ -1,11 +1,11 @@
 
 export const Blog1 = () => {
   return (
-    <div id='blog1' className="w-full h-full bg-[#0a192f] text-gray-300">
-      <div className="container w-[75%] items-center mx-auto">
+    <div id='blog1' className="w-full h-full text-gray-300">
+      <div className="container w-[95%] items-center mx-auto">
       <header className="bg-blue-500 py-4">
         <div className="container mx-auto">
-          <h1 className="text-white text-3xl font-bold">How the Web Works?</h1>
+          <h1 className="text-white text-3xl font-bold">Web</h1>
         </div>
       </header>
 
