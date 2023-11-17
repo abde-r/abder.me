@@ -5,14 +5,14 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import ChatGpt from '../assets/chatgpt.jpg';
 import webserv from '../assets/webserver.jpg';
 import inception from '../assets/incep.jpeg';
-import expressAPI from '../assets/express.png'
+// import expressAPI from '../assets/express.png'
 import cppContainers from '../assets/Cpp.png'
 import nestAPI from '../assets/nest.jpg'
 import pong from '../assets/pong.jpg'
 import algos from '../assets/alg.png'
 import bash from '../assets/sh.jpg'
-import insurance from '../assets/insurance.jpg'
-import booking from '../assets/Booking.jpg'
+// import insurance from '../assets/insurance.jpg'
+// import booking from '../assets/Booking.jpg'
 import microservices from '../assets/microservices.jpg'
 
 
