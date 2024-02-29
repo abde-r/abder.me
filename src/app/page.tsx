@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Left from "@/pages/Left";
+import Right from "@/pages/Right";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      'This is Home!'
+    <main className="Main justify-between">
+      <Left/>
+      <Right />
     </main>
   );
 }
