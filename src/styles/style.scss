@@ -27,9 +27,21 @@
     scrollbar-color: #6969dd #e0e0e0;
 }
 
+
 .nav-content {
     display: flex;
     flex-direction: column;
+}
+
+.nav-content li {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.Socials {
+    margin-top: 150px;
 }
 
 .socials-links {
@@ -37,9 +49,18 @@
     flex-direction: row;
 }
 
+.social {
+    margin: 0 5px;
+}
+
+.social-icon {
+    color: #6969dd;
+}
+
 .About {
     padding: 20px;
     font-size: 17px;
+    font-weight: 600;
     font-family: "Inter", sans-serif;
     margin: 150px 50px;
 }
@@ -57,11 +78,37 @@
 }
 
 .work-card {
-    background-color: gray;
+    // background-color: gray;
     display: flex;
     margin: 50px 0;
+    width: 100%;
+    padding: 20px;
 }
 
 .card-date {
+    width: 40%;
     margin: 10px;
+}
+
+.card-content h1 {
+    font-size: 27px;
+}
+
+.card-content h3 {
+    font-size: 17px;
+}
+
+.card-content p {
+    font-size: 13px;
+}
+
+.card-content-title {
+    display: flex;
+    align-items: center;
+}
+
+.card-content .link {
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 10px;
 }

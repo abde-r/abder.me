@@ -14,7 +14,7 @@ const paragraph2 = `I have a passion for backend development and
 
 export const About = () => {
   return (
-    <div id='About' className='About'>
+    <div id='about' className='About'>
             <p>
                 { paragraph1 }
                 <a href={`https://isgim.edupage.org/`} target='_blank' >ISGI </a>
