@@ -83,23 +83,52 @@
     margin: 50px 0;
     width: 100%;
     padding: 20px;
+    cursor: pointer;
+}
+
+.work-card:hover {
+    background-color: rgba(170, 170, 170, 0.256);
+    transition: 1s ease;
+    // border-radius: 20px;
+    // // border: 2px solid gray;
+    // transition: border-radius 2s ease;
 }
 
 .card-date {
-    width: 40%;
+    width: 20%;
     margin: 10px;
 }
 
+.card-date h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+}
+
 .card-content h1 {
+    font-weight: 600;
     font-size: 27px;
 }
 
 .card-content h3 {
-    font-size: 17px;
+    font-size: 15px;
+    color: #b3b3b3;
 }
 
-.card-content p {
+.card-content .tags {
+    display: flex;
+    margin: 10px 0;
+}
+
+.card-content .tags p {
     font-size: 13px;
+    margin: 5px;
+    background-color: #0d5353;
+    color: #10f7f7;
+    padding: 2px 5px;
+    border-radius: 10px;
+    align-items: center;
+    border: 2px solid;
 }
 
 .card-content-title {

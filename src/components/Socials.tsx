@@ -1,5 +1,5 @@
 import React from 'react'
-import { IoLogoLinkedin, IoLogoGithub, IoLogoReddit, IoLogoTwitter } from "react-icons/io5";
+import { IoLogoLinkedin, IoLogoGithub, IoLogoReddit, IoLogoTwitter, IoLogoStackoverflow  } from "react-icons/io5";
 
 export const Socials = () => {
   return (
@@ -23,6 +23,11 @@ export const Socials = () => {
             <li className='social'>
                 <a className='social-link' href={ process.env.REDDIT } target='_blank'>
                     <IoLogoReddit  />
+                </a>
+            </li>
+            <li className='social'>
+                <a className='social-link' href={ process.env.STACKOVERFLOW } target='_blank'>
+                    <IoLogoStackoverflow    />
                 </a>
             </li>
         </ul>
