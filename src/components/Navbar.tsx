@@ -6,13 +6,13 @@ export const Navbar = () => {
     <div className="Navbar">
         <ul className='nav-content'>
             <li>
-                <Link href="#about">About</Link>
+                <Link className='link' href="#about">About</Link>
             </li>
-            {/* <li>
-                <Link href="#blog">Blog</Link>
-            </li> */}
             <li>
-                <Link href="#work">Work</Link>
+                <Link className='link' href="#work">Work</Link>
+            </li>
+            <li>
+                <Link className='link' href="#blog">Blog</Link>
             </li>
             {/* <li>
                 <Link href="#contact"> Contact </Link>
