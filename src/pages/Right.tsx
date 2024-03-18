@@ -8,8 +8,8 @@ export default function Right() {
   return (
     <div className='Right'>
         <About />
-        <Blog />
         <Work />
+        <Blog />
     </div>
   )
 }

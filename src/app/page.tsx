@@ -4,7 +4,7 @@ import Right from "@/pages/Right";
 export default function Home() {
   return (
     <main id="/" className="Main justify-between">
-      <Left/>
+      <Left/> 
       <Right />
     </main>
   );

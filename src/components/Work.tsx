@@ -13,7 +13,7 @@ export const Work = () => {
           <div className="card-content">
             <div className="card-content-title">
               <h1>Transcendence</h1>
-              <a className='link' href='gg' target='_blank'><IoOpenOutline /></a>
+              <a className='link' href={`${process.env.GITHUB}/Transcendence`} target='_blank'><IoOpenOutline /></a>
             </div>
             <h3>FullStack web app with online multiplayer game and real-time chat app</h3>
             <div className="tags">
@@ -34,7 +34,7 @@ export const Work = () => {
           <div className="card-content">
             <div className="card-content-title">
               <h1>httperv</h1>
-              <a className='link' href='gg' target='_blank'><IoOpenOutline /></a>
+              <a className='link' href={`${process.env.GITHUB}/httperv`} target='_blank'><IoOpenOutline /></a>
             </div>
             <h3>Re-writing an http server in C++.</h3>
             <div className="tags">
@@ -52,7 +52,7 @@ export const Work = () => {
           <div className="card-content">
             <div className="card-content-title">
               <h1>stl-Containers</h1>
-              <a className='link' href='gg' target='_blank'><IoOpenOutline /></a>
+              <a className='link' href={`${process.env.GITHUB}/stl-Containers`} target='_blank'><IoOpenOutline /></a>
             </div>
             <h3>Re-implementation of STL Containers in C++ 98.</h3>
             <div className="tags">
