@@ -115,6 +115,11 @@
     height: 100vh;
 }
 
+.about-links {
+    font-weight: 500;
+    color: #aed5d7;
+}
+
 .About p {
     margin: 10px 0;
 }
@@ -176,6 +181,7 @@
 .card-content .tags {
     display: flex;
     margin: 10px 0;
+    display: -webkit-inline-box;
 }
 
 .card-content .tags p {
@@ -210,4 +216,63 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+.blog-card {
+    // background-color: #0d5353;
+    display: flex;
+    padding: 10px;
+    // border: 2px solid #555;
+    // border-radius: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    width: 65%;
+
+    --shadowColor: 187 60% 40%;
+	// display: flex;
+	// flex-wrap: wrap;
+	// background: hsl(187 70% 85%);
+	// max-width: 50rem;
+	// width: 100%;
+	box-shadow: 0.3rem 0.3rem 0 #76ABAE;
+	border-radius: 0.8rem;
+	overflow: hidden;
+	border: 3px solid #dcdcdc;
+}
+
+.blog-card:hover {
+	box-shadow: 0.4rem 0.4rem 0 #76ABAE;
+    transition: 0.4s;
+}
+
+.blog-card-background {
+    width: 30%;
+    // margin: 0 15px;
+}
+
+.blog-card-content {
+    width: 70%;
+    margin: 0 15px;
+}
+
+.blog-card-content h1 {
+    font-size: 21px;
+    font-family: 'IBM Plex Sans Thai';
+    font-weight: 700;
+    color: #e0e0e0;
+    margin: 10px 0;
+}
+
+.blog-card-content p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+    color: #c6dee0;
+    font-family: 'IBM Plex Sans Thai';
+}
+
+.blog-card-content h3 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    color: #ededed;
 }

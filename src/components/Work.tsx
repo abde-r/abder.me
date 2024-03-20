@@ -26,6 +26,7 @@ export const Work = () => {
             </div>
           </div>
         </div>
+        <hr />
 
         <div className="work-card">
           <div className="card-date">
@@ -44,6 +45,8 @@ export const Work = () => {
             </div>
           </div>
         </div>
+        <hr />
+
 
         <div className="work-card">
           <div className="card-date">

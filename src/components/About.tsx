@@ -1,27 +1,25 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { IoOpenOutline } from "react-icons/io5";
 
-const paragraph1 = `My name is Abderrahman, and I'm a 0x16 years-old(22) software engineering student based in Morocco,
-                    alumnus of `
-const paragraph2 = `I have a passion for backend development and
-                    thoroughly enjoy the challenges that come with it. I find joy in the intricate art of Problem-solving. 
-                    Whether it's crafting efficient algorithms or building robust systems, 
-                    I thrive on the challenges that the world of software engineering presents. 
-                    I'm driven by a constant desire to learn, innovate, and contribute to 
-                    the ever-evolving tech landscape, and I'm excited to see where this journey 
-                    takes me.`
+// const paragraph1 = `My name is Abderrahman, and I'm a 0x16 years-old(22) software engineering student based in Morocco,
+//                     alumnus of `
+// const paragraph2 = `I have a passion for backend development and
+//                     thoroughly enjoy the challenges that come with it. I find joy in the intricate art of Problem-solving. 
+//                     Whether it's crafting efficient algorithms or building robust systems, 
+//                     I thrive on the challenges that the world of software engineering presents. 
+//                     I'm driven by a constant desire to learn, innovate, and contribute to 
+//                     the ever-evolving tech landscape, and I'm excited to see where this journey 
+//                     takes me.`
 
 export const About = () => {
   return (
     <div id='about' className='About'>
             <p>
-                { paragraph1 }
-                <a href={`https://isgim.edupage.org/`} target='_blank' >ISGI </a>
+                { process.env.P1 }
+                <a className='about-links' href={`https://isgim.edupage.org/`} target='_blank' >ISGI<IoOpenOutline style={{ display: 'inline' }} /> </a>
                  (Institut Supérieur de Gestion et d'Informatique) and Currently studying at
-                <a href={`https://1337.ma/`} target='_blank' > 1337FIL.</a>
+                <a className='about-links' href={`https://1337.ma/`} target='_blank' > 1337FIL<IoOpenOutline style={{ display: 'inline' }} />.</a>
             </p>
-            <p>{ paragraph2 }</p>
+            <p>{ process.env.P2 }</p>
             
             {/* <p>* some of the Problem solving challenges:</p> */}
                     {/* <div className="p_solvingLinks">
