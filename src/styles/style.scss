@@ -81,6 +81,8 @@
 }
 
 .Socials {
+    display: flex;
+    flex-direction: row;
     margin-top: 150px;
 }
 
@@ -275,4 +277,102 @@
     font-family: "Fira Sans", sans-serif;
     font-weight: 300;
     color: #ededed;
+}
+
+
+/***    ***/
+
+@media screen and (max-width: 768px) {
+  .Main {
+    flex-direction: column;
+    height: 100%; /* Set width to 100% on smaller screens */
+    // order: unset; /* Reset the order */
+  }
+
+  .Left {
+    margin: 0;
+    height: 70vh;
+  }
+  .Left h1 {
+    font-size: 1em;
+  }
+
+  .Left h3 {
+    font-size: 0.8em;
+  }
+
+  .Navbar {
+    display: none;
+  }
+
+  .Socials {
+    display: none;
+  }
+
+  .Right {
+    width: 100%;
+  }
+
+  .About {
+    height: 100%;
+    margin: 10px;
+    font-size: 13px;
+  }
+
+  .Work {
+    margin: 10px;
+    height: 100%;
+  }
+
+  .work-card {
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .card-content-title h1 {
+    font-size: 1em;
+  }
+
+  .card-content {
+    width: 80%;
+  }
+
+  .card-content .link {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+
+  .card-content h3 {
+    font-size: 0.7em;
+  }
+
+  .tags {
+    overflow: hidden;
+  }
+
+  .card-content .tags p {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 10px;
+  }
+
+  .blog-card {
+    width: 90%;
+    padding: 5px;
+  }
+
+  .blog-card-content {
+    margin: 0 5px;
+  }
+  .blog-card-content h1 {
+    font-size: 13px;
+  }
+
+  .blog-card-content p {
+    font-size: 11px;
+  }
+
+  .blog-card-content h3 {
+    font-size: 11px;
+  }
 }

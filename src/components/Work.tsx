@@ -4,7 +4,7 @@ import { IoOpenOutline } from "react-icons/io5";
 export const Work = () => {
   return (
     <div id='work' className="Work">
-      <div className="work-cards">
+      {/* <div className="work-cards"> */}
 
         <div className="work-card">
           <div className="card-date">
@@ -66,7 +66,7 @@ export const Work = () => {
           </div>
         </div>
 
-      </div>
+      {/* </div> */}
     </div>
   )
 }

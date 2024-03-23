@@ -3,7 +3,7 @@ import { IoLogoLinkedin, IoLogoGithub, IoLogoReddit, IoLogoTwitter, IoLogoStacko
 
 export const Socials = () => {
   return (
-    <div className="Socials md:flex flex-row">
+    <div className="Socials">
         <ul className='socials-links'>
             <li className='social'>
                 <a className='social-link' href={ process.env.GITHUB } target='_blank'>

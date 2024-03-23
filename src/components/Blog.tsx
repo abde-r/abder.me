@@ -23,7 +23,7 @@ export const Blog = () => {
         <div id='blog' className="Blog">
           { blogs.map((blog, index) => (
             <div key={index} className="blog-card">
-              <div className="card-background">
+              <div className="blog-card-background">
                   <img src={blog.imageSrc} className='rounded-l-md object-cover h-full w-full max-h-48' />
               </div>
               <div className="blog-card-content">
