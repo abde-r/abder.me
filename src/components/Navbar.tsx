@@ -12,7 +12,7 @@ export const Navbar = () => {
                 <Link className='link' href="#work">Work</Link>
             </li>
             <li>
-                <Link className='link' href="#blog">Blog</Link>
+                <Link className='link' href="#blog">Writings</Link>
             </li>
         </ul>
     </div>

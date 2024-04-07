@@ -16,7 +16,7 @@ export const About = () => {
             <p>
                 { process.env.P1 }
                 <a className='about-links' href={`https://isgim.edupage.org/`} target='_blank' >ISGI<IoOpenOutline style={{ display: 'inline' }} /> </a>
-                 (Institut Supérieur de Gestion et d'Informatique) <span style={{ fontStyle: 'italic', textDecoration: 'underline' }}>where I wrot code on paper</span>, and Currently studying at
+                 (Institut Supérieur de Gestion et d'Informatique) <span style={{ fontStyle: 'italic', fontWeight: '400' }}>-where I wrot code on paper</span>, and Currently studying at
                 <a className='about-links' href={`https://1337.ma/`} target='_blank' > 1337FIL<IoOpenOutline style={{ display: 'inline' }} />.</a>
             </p>
             <p>{ process.env.P2 }</p>
