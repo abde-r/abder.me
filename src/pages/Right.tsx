@@ -1,15 +1,14 @@
 import React from 'react'
 import { About } from '@/components/About'
-import { Contact } from '@/components/Contact'
 import { Work } from '@/components/Work'
-import { Blog } from '@/components/Blog'
+import { Writings } from '@/components/Writings'
 
 export default function Right() {
   return (
-    <div className='Right'>
+    <div className='w-[50%] items-center overflow-y-auto'>
         <About />
         <Work />
-        <Blog />
+        <Writings />
     </div>
   )
 }

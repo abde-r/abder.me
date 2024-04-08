@@ -3,30 +3,30 @@ import { IoLogoLinkedin, IoLogoGithub, IoLogoReddit, IoLogoTwitter, IoLogoStacko
 
 export const Socials = () => {
   return (
-    <div className="Socials">
-        <ul className='socials-links'>
-            <li className='social'>
-                <a className='social-link' href={ process.env.GITHUB } target='_blank'>
+    <div className="flex flex-row mt-20">
+        <ul className='flex flex-row'>
+            <li className='mx-2'>
+                <a className='hover:text-[#c2c2c2] ease-in duration-200' href={ process.env.GITHUB } target='_blank'>
                     <IoLogoGithub  />
                 </a>
             </li>
-            <li className='social'>
-                <a className='social-link' href={ process.env.TWITTER } target='_blank'>
+            <li className='mx-2'>
+                <a className='hover:text-[#c2c2c2] ease-in duration-200' href={ process.env.TWITTER } target='_blank'>
                     <IoLogoTwitter  />
                 </a>
             </li>
-            <li className='social'>
-                <a className='social-link' href={ process.env.LINKEDIN } target='_blank'>
+            <li className='mx-2'>
+                <a className='hover:text-[#c2c2c2] ease-in duration-200' href={ process.env.LINKEDIN } target='_blank'>
                     <IoLogoLinkedin />
                 </a>
             </li>
-            <li className='social'>
-                <a className='social-link' href={ process.env.REDDIT } target='_blank'>
+            <li className='mx-2'>
+                <a className='hover:text-[#c2c2c2] ease-in duration-200' href={ process.env.REDDIT } target='_blank'>
                     <IoLogoReddit  />
                 </a>
             </li>
-            <li className='social'>
-                <a className='social-link' href={ process.env.STACKOVERFLOW } target='_blank'>
+            <li className='mx-2'>
+                <a className='hover:text-[#c2c2c2] ease-in duration-200' href={ process.env.STACKOVERFLOW } target='_blank'>
                     <IoLogoStackoverflow    />
                 </a>
             </li>

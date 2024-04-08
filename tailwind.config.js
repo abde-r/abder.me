@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         primary: '#222831',
         secondary: '#76ABAE',
+        third: 'rgb(148 180 189)',
       },
       fontFamily: {
         fira: ['Fira Sans'],

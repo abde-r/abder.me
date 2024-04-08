@@ -17,137 +17,137 @@
     padding: 20px;
 }
 
-.Left {
-    // align-items: center;
-    // // width: 50%;
-    margin: auto;
+// .Left {
+//     // align-items: center;
+//     // // width: 50%;
+//     margin: auto;
 
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    // height: 100vh;
-}
+//     display: flex;
+//     flex-direction: column;
+//     align-items: start;
+//     justify-content: center;
+//     // height: 100vh;
+// }
 
-.Left p {
-    font-size: 13px;
-    font-weight: 500;
-    font-family: "Fira Sans", sans-serif;
-    color: #EEEEEE;
-}
+// .Left p {
+//     font-size: 13px;
+//     font-weight: 500;
+//     font-family: "Fira Sans", sans-serif;
+//     color: #EEEEEE;
+// }
 
-.Left h1 {
-    font-size: 50px;
-    font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
-    color:#76ABAE;
-}
+// .Left h1 {
+//     font-size: 50px;
+//     font-weight: 700;
+//     font-family: 'Open Sans', sans-serif;
+//     color:#76ABAE;
+// }
 
-.Left h3 {
-    font-size: 35px;
-    font-weight: 700;
-    color: #EEEEEE;
-    font-family: 'IBM Plex Sans Thai', sans-serif;
-}
+// .Left h3 {
+//     font-size: 35px;
+//     font-weight: 700;
+//     color: #EEEEEE;
+//     font-family: 'IBM Plex Sans Thai', sans-serif;
+// }
 
-.Right {
-    align-items: center;
-    width: 50%;
-    overflow-y: auto;
-    scrollbar-color: #6969dd #e0e0e0;
-}
+// .Right {
+//     align-items: center;
+//     width: 50%;
+//     overflow-y: auto;
+//     scrollbar-color: #6969dd #e0e0e0;
+// }
 
-.Navbar {
-    margin: 20px;
-    font-family: "Open Sans", sans-serif;
-}
+// .Navbar {
+//     margin: 20px;
+//     font-family: "Open Sans", sans-serif;
+// }
 
-.nav-content {
-    display: flex;
-    flex-direction: column;
-}
+// .nav-content {
+//     display: flex;
+//     flex-direction: column;
+// }
 
-.nav-content li {
-    color: #76ABAE;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    margin: 10px;
-}
+// .nav-content li {
+//     color: #76ABAE;
+//     text-transform: uppercase;
+//     font-size: 12px;
+//     font-weight: 700;
+//     margin: 10px;
+// }
 
-.link:hover {
-    color: #757373;
-    transition: 0.5s;
-}
+// .link:hover {
+//     color: #757373;
+//     transition: 0.5s;
+// }
 
-.Socials {
-    display: flex;
-    flex-direction: row;
-    margin-top: 150px;
-}
+// .Socials {
+//     display: flex;
+//     flex-direction: row;
+//     margin-top: 150px;
+// }
 
-.socials-links {
-    display: flex;
-    flex-direction: row;
-}
+// .socials-links {
+//     display: flex;
+//     flex-direction: row;
+// }
 
-.social {
-    margin: 0 5px;
-}
+// .social {
+//     margin: 0 5px;
+// }
 
-.social-icon {
-    color: #6969dd;
-}
+// .social-icon {
+//     color: #6969dd;
+// }
 
-.social:hover {
-    color: #757373;
-    transition: 0.5s;
-}
+// .social:hover {
+//     color: #757373;
+//     transition: 0.5s;
+// }
 
-.About {
-    // padding: 20px;
-    font-size: 17px;
-    font-weight: 300;
-    font-family: "Fira Sans", sans-serif;
-    margin: 0 75px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
+// .About {
+//     // padding: 20px;
+//     font-size: 17px;
+//     font-weight: 300;
+//     font-family: "Fira Sans", sans-serif;
+//     margin: 0 75px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+// }
 
-.about-links {
-    font-weight: 500;
-    color: #aed5d7;
-}
+// .about-links {
+//     font-weight: 500;
+//     color: #aed5d7;
+// }
 
-.About p {
-    margin: 10px 0;
-}
+// .About p {
+//     margin: 10px 0;
+// }
 
-.About .link-icon {
-    font-size: 10px;
-}
+// .About .link-icon {
+//     font-size: 10px;
+// }
 
-.Work {
-    margin: 0 75px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
+// .Work {
+//     margin: 0 75px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+// }
 
-.work-card {
-    // background-color: gray;
-    display: flex;
-    margin: 50px 0;
-    width: 100%;
-    padding: 20px;
-    font-family: "IBM Plex Sans Thai", sans-serif;
-    // cursor: pointer;
-}
+// .work-card {
+//     // background-color: gray;
+//     display: flex;
+//     margin: 50px 0;
+//     width: 100%;
+//     padding: 20px;
+//     font-family: "IBM Plex Sans Thai", sans-serif;
+//     // cursor: pointer;
+// }
 
 // .work-card:hover {
 //     background-color: rgba(170, 170, 170, 0.256);
@@ -157,45 +157,45 @@
 //     // transition: border-radius 2s ease;
 // }
 
-.card-date {
-    width: 20%;
-    margin: 10px;
-}
+// .card-date {
+//     width: 20%;
+//     margin: 10px;
+// }
 
-.card-date h3 {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 11px;
-    color: #c6dee0;
-    font-family: 'IBM Plex Sans Thai';
-}
+// .card-date h3 {
+//     text-transform: uppercase;
+//     font-weight: 300;
+//     font-size: 11px;
+//     color: #c6dee0;
+//     font-family: 'IBM Plex Sans Thai';
+// }
 
-.card-content h1 {
-    font-weight: 600;
-    font-size: 27px;
-}
+// .card-content h1 {
+//     font-weight: 600;
+//     font-size: 27px;
+// }
 
-.card-content h3 {
-    font-size: 15px;
-    color: #b3b3b3;
-}
+// .card-content h3 {
+//     font-size: 15px;
+//     color: #b3b3b3;
+// }
 
-.card-content .tags {
-    display: flex;
-    margin: 10px 0;
-    display: -webkit-inline-box;
-}
+// .card-content .tags {
+//     display: flex;
+//     margin: 10px 0;
+//     display: -webkit-inline-box;
+// }
 
-.card-content .tags p {
-    font-size: 13px;
-    margin: 5px;
-    background-color: #0d5353;
-    color: #76ABAE;
-    padding: 2px 5px;
-    border-radius: 10px;
-    align-items: center;
-    border: 2px solid;
-}
+// .card-content .tags p {
+//     font-size: 13px;
+//     margin: 5px;
+//     background-color: #0d5353;
+//     color: #76ABAE;
+//     padding: 2px 5px;
+//     border-radius: 10px;
+//     align-items: center;
+//     border: 2px solid;
+// }
 
 .card-content-title {
     display: flex;

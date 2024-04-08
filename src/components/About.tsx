@@ -12,30 +12,13 @@ import { IoOpenOutline } from "react-icons/io5";
 
 export const About = () => {
   return (
-    <div id='about' className='About'>
-            <p>
-                { process.env.P1 }
-                <a className='about-links' href={`https://isgim.edupage.org/`} target='_blank' >ISGI<IoOpenOutline style={{ display: 'inline' }} /> </a>
-                 (Institut Supérieur de Gestion et d'Informatique) <span style={{ fontStyle: 'italic', fontWeight: '400' }}>-where I wrot code on paper</span>, and Currently studying at
-                <a className='about-links' href={`https://1337.ma/`} target='_blank' > 1337FIL<IoOpenOutline style={{ display: 'inline' }} />.</a>
-            </p>
-            <p>{ process.env.P2 }</p>
-            
-            {/* <p>* some of the Problem solving challenges:</p> */}
-                    {/* <div className="p_solvingLinks">
-                        <div className="p_solivingLink">
-                            <img src={ `f` } />
-                            <a href={ 'https://leetcode.com/stronk/' } target='_blank'><p>* leetcode</p></a>
-                        </div>
-                        <div className="p_solivingLink">
-                            <img src={ `f` } />
-                            <a href={ 'https://codeforces.com/profile/stronk' } target='_blank'><p>* codeforces</p></a>
-                        </div>
-                        <div className="p_solivingLink">
-                            <img src={ `f` } />
-                            <a href={ 'https://www.codingame.com/profile/f2fcbf8c06112436da6c14c7ebf7e5b37294674' } target='_blank'><p>* codingame</p></a>
-                        </div>
-                    </div> */}
-            </div>
+    <div id='about' className='w-[80%] mx-auto flex flex-col font-fira font-normal text-base items-center justify-center h-[90vh] text-gray-200'>
+        <p className="my-2"> { process.env.P1 }
+            <a className='font-semibold text-[#76ABAE]' href={`https://isgim.edupage.org/`} target='_blank' >ISGI<IoOpenOutline className="inline ml-1" /> </a>
+             (Institut Supérieur de Gestion et d'Informatique) <span className="font-semibold text-gray-400 italic">-where I wrot code on paper</span>, and Currently studying at
+            <a className='font-semibold text-[#76ABAE]' href={`https://1337.ma/`} target='_blank' > 1337FIL<IoOpenOutline className="inline ml-1" />.</a>
+        </p>
+        <p className="my-2">{ process.env.P2 }</p>
+    </div>
   )
 }

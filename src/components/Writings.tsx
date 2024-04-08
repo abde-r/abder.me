@@ -2,7 +2,7 @@ import { IoOpenOutline } from "react-icons/io5";
 import Link from 'next/link'
 
 
-export const Blog = () => {
+export const Writings = () => {
     
   const blogs = [
     {

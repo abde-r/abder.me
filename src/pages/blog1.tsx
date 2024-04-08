@@ -17,6 +17,7 @@ export default function blog1() {
           <div className='mx-auto items-center justify-center flex my-10'>
             <img className='rounded' alt='ice-burg' src={`https://img.freepik.com/premium-photo/iceberg-is-water-word-ice-is-visible-bottom_549702-3218.jpg`} />
           </div>
+          
           <section className="my-8">
             <h3 className="text-lg font-semibold text-secondary">What happens when you type a web address in your browser?</h3>
             <p className="text-sm mt-2 italic text-gray-400">Fleeting look</p>
