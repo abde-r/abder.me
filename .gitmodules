@@ -1,0 +1,3 @@
+[submodule "stronk.content"]
+	path = stronk.content
+	url = git@github.com:stronkexe/stronk.content.git
