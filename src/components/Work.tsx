@@ -28,19 +28,19 @@ export const Work = () => {
       {
         projects.map((project: any, index: number) => (
           <div key={index} className="flex my-5 p-2 w-[100%]">
-            <div className="w-[15%] my-5 uppercase text-[#c6dee0] font-semibold text-xs">
+            <div className="w-[15%] my-5 uppercase text-gray-400 font-semibold text-xs">
               <h3>{ project.date }</h3>
             </div>
             <div className="w-[85%]">
               <div className="flex items-center">
-                <h1 className='text-xl font-semibold'>{ project.title }</h1>
+                <h1 className='text-xl font-semibold text-gray-300'>{ project.title }</h1>
                 <a className='ml-1' href={`${process.env.GITHUB}/${project.title}`} target='_blank'><IoOpenOutline /></a>
               </div>
               <h3 className='text-base text-[#b3b3b3]'>{ project.description }</h3>
               <div className="flex my-3">
                 {
                   project.tags.map((tag: any) => (
-                    <p className='m-2 text-sm bg-[#0d5353] text-[#76ABAE] border-2 rounded-lg p-1 items-center'>{ tag }</p>
+                    <p className='m-2 text-sm bg-secondary/75 font-normal text-gray-900 rounded-lg p-1 items-center'>{ tag }</p>
                   ))
                 }
               </div>

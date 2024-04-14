@@ -26,7 +26,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-  background-color: #222831;
+  /* background-color: #203547; */
+
+  background: #203547;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #29435a, #33506b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #203547, #1b2c3c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 @layer utilities {
