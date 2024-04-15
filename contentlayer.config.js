@@ -25,48 +25,12 @@ export const About = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
-    p1: {
-      type: "string",
-      required: true,
-    },
-    p2: {
-      type: "string",
-      required: true,
-    },
     description: {
       type: "string",
     },
     published: {
       type: "boolean",
       default: true,
-    },
-  },
-  computedFields,
-}))
-
-export const Guide = defineDocumentType(() => ({
-  name: "Guide",
-  filePathPattern: `guides/**/*.mdx`,
-  contentType: "mdx",
-  fields: {
-    title: {
-      type: "string",
-      required: true,
-    },
-    description: {
-      type: "string",
-    },
-    date: {
-      type: "date",
-      required: true,
-    },
-    published: {
-      type: "boolean",
-      default: true,
-    },
-    featured: {
-      type: "boolean",
-      default: false,
     },
   },
   computedFields,
@@ -82,6 +46,12 @@ export const Writing = defineDocumentType(() => ({
       required: true,
     },
     description: {
+      type: "string",
+    },
+    img: {
+      type: "string",
+    },
+    id: {
       type: "string",
     },
     date: {
@@ -108,46 +78,6 @@ export const Writing = defineDocumentType(() => ({
   },
   computedFields,
 }))
-
-// export const Author = defineDocumentType(() => ({
-//   name: "Author",
-//   filePathPattern: `authors/**/*.mdx`,
-//   contentType: "mdx",
-//   fields: {
-//     title: {
-//       type: "string",
-//       required: true,
-//     },
-//     description: {
-//       type: "string",
-//     },
-//     avatar: {
-//       type: "string",
-//       required: true,
-//     },
-//     twitter: {
-//       type: "string",
-//       required: true,
-//     },
-//   },
-//   computedFields,
-// }))
-
-// export const Page = defineDocumentType(() => ({
-//   name: "Page",
-//   filePathPattern: `pages/**/*.mdx`,
-//   contentType: "mdx",
-//   fields: {
-//     title: {
-//       type: "string",
-//       required: true,
-//     },
-//     description: {
-//       type: "string",
-//     },
-//   },
-//   computedFields,
-// }))
 
 export default makeSource({
   contentDirPath: "src/content",
