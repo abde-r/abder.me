@@ -1,27 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import "@/styles/style.scss";
-
-import { Open_Sans } from 'next/font/google'
-
-//👇 Configure our font object
-const openSans = Open_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-})
-
-const inter = Inter({ subsets: ["latin"] });
+import "../styles/globals.scss";
+import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "abderr",
+  title: "abdee",
   description: "Personal Portfolio",
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body className={` ${inter.className} ${openSans.className}`}>{children}</body>
+      <Head>
+        <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+      </Head>
+      <body >{children}</body>
     </html>
   );
 }
