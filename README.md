@@ -1,4 +1,4 @@
 ### Technologies used:
 
-leetcode   | codingame    | codeforces      | codesignal      | hackerrank     
----        | ---          | ---             | ---             | ---    
+NextJs   | Tailwind    | Tailwind Typography      | MDX            
+---        | ---          | ---             | ---                 
