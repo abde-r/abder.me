@@ -1,6 +1,6 @@
 import { Socials } from "@/components/Socials";
-import Left from "@/pages/Left";
-import Right from "@/pages/Right";
+import Left from "@/components/Left";
+import Right from "@/components/Right";
 
 export default function Home() {
   return (

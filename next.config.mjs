@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: function(config) {
+    config.resolve.fallback = { fs: false };
     config.module.rules.push({
       test: /\.mdx$/,
       use: 'raw-loader',
