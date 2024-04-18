@@ -7,7 +7,7 @@ import { IoNewspaper } from "react-icons/io5";
 
 export const Writings = () => {
 
-  const contentDir = './content/Writings';
+  const contentDir = 'content/Writings';
   const files = fs.readdirSync(path.join(contentDir));
   const writings: any = files.map(filename => {
     const fileContent = fs.readFileSync(path.join(contentDir, filename), 'utf-8');
