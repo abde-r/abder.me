@@ -1,19 +1,16 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { MDXRemote } from 'next-mdx-remote/rsc';
 import { Socials } from "@/components/Socials";
+import { MDXRemote } from 'next-mdx-remote/rsc';
 
-const getWriting = ({slug}: {slug: string}) => {
-
-  const writing = fs.readFileSync(path.join('content/Writings', slug + '.mdx'), 'utf-8');
-  const {data: fontMatter, content} = matter(writing);
-
-  return { fontMatter, slug, content };
+const getWriting = ({ slug }: { slug: string }) => {
+  const writing = fs.readFileSync(path.join('content', 'Writings', `${slug}.mdx`), 'utf-8');
+  const { data: frontMatter, content } = matter(writing);
+  return { frontMatter, slug, content };
 }
 
 export default function Page({ params }: { params: { slug: string } }) {
-
   const props: any = getWriting(params);
 
   return (
