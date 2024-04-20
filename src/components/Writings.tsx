@@ -21,7 +21,7 @@ export const Writings = () => {
             writings.map((writing: any, index: number) => (
               <Link
                 key={index}
-                href={`writings/${writing.meta.title.split(' ').join('_')}`}
+                href={`writings/${writing.meta.title.split(' ').join('-').toLowerCase()}`}
                 className="flex shadow-[0_1px_5px_rgb(100,150,250,0.3)] hover:shadow-[0_1px_10px_rgb(100,150,250,0.3)] p-2 items-center rounded my-4 w-[60%] max-md:w-[80%] max-bsm:w-[95%]">
               <div className=" p-3 bg-[#7694bc] mx-1 rounded-xl max-md:hidden">
                 <IoNewspaper />
