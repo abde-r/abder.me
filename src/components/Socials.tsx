@@ -7,27 +7,27 @@ export const Socials = () => {
         <p className='my-2 font-fira text-gray-300 text-sm max-sm:text-xs'>catch me on:</p>
         <ul className='flex flex-row'>
             <li className='mx-2 max-sm:text-xs max-sm:mx-0'>
-                <a className='hover:text-[#c2c2c2] ease-in duration-200' href={ process.env.GITHUB } target='_blank'>
+                <a className='hover:text-[#c2c2c2] ease-in duration-200' aria-label='social-link' href={ process.env.GITHUB } target='_blank'>
                     <IoLogoGithub  />
                 </a>
             </li>
             <li className='mx-2 max-sm:text-xs max-sm:mx-0'>
-                <a className='hover:text-[#c2c2c2] ease-in duration-200' href={ process.env.TWITTER } target='_blank'>
+                <a className='hover:text-[#c2c2c2] ease-in duration-200' aria-label='social-link' href={ process.env.TWITTER } target='_blank'>
                     <IoLogoTwitter  />
                 </a>
             </li>
             <li className='mx-2 max-sm:text-xs max-sm:mx-0'>
-                <a className='hover:text-[#c2c2c2] ease-in duration-200' href={ process.env.LINKEDIN } target='_blank'>
+                <a className='hover:text-[#c2c2c2] ease-in duration-200' aria-label='social-link' href={ process.env.LINKEDIN } target='_blank'>
                     <IoLogoLinkedin />
                 </a>
             </li>
             <li className='mx-2 max-sm:text-xs max-sm:mx-0'>
-                <a className='hover:text-[#c2c2c2] ease-in duration-200' href={ process.env.REDDIT } target='_blank'>
+                <a className='hover:text-[#c2c2c2] ease-in duration-200' aria-label='social-link' href={ process.env.REDDIT } target='_blank'>
                     <IoLogoReddit  />
                 </a>
             </li>
             <li className='mx-2 max-sm:text-xs max-sm:mx-0'>
-                <a className='hover:text-[#c2c2c2] ease-in duration-200' href={ process.env.STACKOVERFLOW } target='_blank'>
+                <a className='hover:text-[#c2c2c2] ease-in duration-200' aria-label='social-link' href={ process.env.STACKOVERFLOW } target='_blank'>
                     <IoLogoStackoverflow    />
                 </a>
             </li>
