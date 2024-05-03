@@ -1,0 +1,83 @@
+---
+title: 'How The Web Works?'
+id: 1
+date: Nov 2022
+img: 'https://img.freepik.com/premium-photo/iceberg-is-water-word-ice-is-visible-bottom_549702-3218.jpg'
+description: 'What happens when you type a web address in your browser?'
+published: true
+---
+
+## 🌐 How the Web Works? <figure>-- behind The Scenes</figure>
+
+![alt img](https://img.freepik.com/premium-photo/iceberg-is-water-word-ice-is-visible-bottom_549702-3218.jpg)
+
+#### What happens when you type a web address in your browser?
+
+<figure>Fleeting look</figure>
+
+<strong>1-</strong> The browser goes to DNS server, and finds the real address of the server that the website lives on.
+
+<strong>2-</strong> The browser sends an HTTP request message to the server, asking to send a copy of the website to the client. This message and all other data sent between the client and the server, is sent across your internet connection using TCP/IP.
+
+<strong>3 </strong>-If the server approves the client’s request, the server sends the client a 200 OK message, then starts sending the website’s files to the browser as s series of small chunks called data packets
+
+<strong>4 </strong>-The browser assembles the small chunks into a complete web page and displays it into you.
+
+#### What in the world a `DNS` is?
+
+Domain Name System is like an address book for websites. When you type a web address in your browser, the browser looks at the DNS to find the website's IP address before it can retrieve the website. The browser needs to find out which server the website lives on, so it can send HTTP messages to the right place
+
+Real web addresses aren't the nice, memorable strings you type into your address bar to find your favorite websites. They are special numbers that look like this: 192.0.2.172.
+
+This is called an IP address, and it represents a unique location on the web. However, it's not very easy to remember, is it? That's why the Domain Name System was invented. This system uses special servers that match up a web address you type into your browser (like "example.com") to the website's real (IP) address.
+
+In summary. We trying to resolve IP addresses to domain names, it’s like the server saying it’s this IP! the point is actually not where is it, but HOW can I find it!
+
+The mechanism DNS uses is like I don’t know where anything is, but i’ll keep asking going door-to-door then find out what the answer is, or there isn’t one.
+
+![alt DNS](https://media.licdn.com/dms/image/D4E22AQGiqb-G1JERIQ/feedshare-shrink_2048_1536/0/1696255318020?e=2147483647&v=beta&t=Z_bdnr0FTVfGYCQO_gNYPBBTdj7SlYBRAVMTYfFxO0E)
+###### <ins>DNS be like:</ins>
+
+
+
+①<strong> Website request:</strong> The first step is, to request the actual website via a web browser. Both the OS and browser first look at their own DNS caches to see if the information is already stored locally. If not, the resolver must be asked.
+
+②<strong> Ask resolver</strong>- Once the locally cached DNS records have been checked, the OS asks the resolver. The resolver is usually your ISP (internet service provider). It first checks its own cache to verify if the information is not already stored locally. If it's not, it goes on to ask the root server.
+
+③<strong> Ask root server</strong>- The root server looks at the last section of the request (the .com portion). Although the root server cannot locate the IP address of the website, it tells the resolver where the top level domain (TLD) servers are for .com. The resolver then stores this information for later use.
+
+④<strong> Ask TLD server</strong>- The resolver goes on to ask the TLD servers the IP address of the website in question. Although the TLD servers can't provide us with the required information, they know where to direct our request. The TLD servers provide the resolver with a list of name servers for that website. Again, the resolver stores this information for later use.
+
+⑤<strong> Ask authoritative name servers</strong>- Finally, now that the resolver knows what the authoritative name servers are, it can query these name servers and retrieve the required IP information. The authoritative name servers contain all the necessary information regarding a particular domain.
+
+⑥<strong> Cache the IP and return it to the browser</strong>- Now that the resolver knows the IP of said domain, it will cache it for later use. At this point, the IP is delivered to your OS where it is locally cached as well. The OS then passes this information on to the browser. Once the browser knows the IP address of the website, it can then begin requesting and receiving information from the website's origin server.
+
+#### DNS Records
+
+DNS servers use DNS records to store information about domain names. There are several types of DNS records, each with specific purpose
+
+⇲<strong> A (Address) Record:</strong> This type of record maps a domain name to an IP address. For example, the A record for "google.com" might map to the IP address 172.217.1.46.
+
+⇲<strong> MX (Mail Exchange) Record:</strong>  This type of record specifies which mail server is responsible for handling email for a particular domain. For example, the MX record for "example.com" might specify that the mail server for that domain is "mail.example.com".
+
+⇲<strong> CNAME (Canonical Name) Record:</strong>  This type of record maps one domain name to another. For example, a CNAME record might map "www.example.com" to "example.com".
+
+⇲<strong> NS (Name Server) Record:</strong>  This type of record specifies which DNS server is authoritative for a particular domain. For example, the NS record for "example.com" might specify that the authoritative DNS server for that domain is "dns1.example.com".
+
+⇲<strong> TXT (Text) Record:</strong>  This type of record is used to store arbitrary text data associated with a domain. It can be used for a variety of purposes, such as domain verification or SPF records for email.
+
+#### DNS Caching
+
+DNS caching refers to the temporary storage of information about previous DNS lookups on a machine's OS or web browser. Keeping a local copy of a DNS lookup allows your OS or browser to quickly retrieve it and thus a website's URL can be resolved to its corresponding IP much more efficiently. The basic function of different cache types is all more or less the same. However, if you need a more comprehensive explanation of cache.
+
+DNS caching helps to reduce the load on authoritative DNS servers by reducing the number of queries they receive. This can significantly improve the speed and reliability of the DNS system by reducing latency and network congestion. Caching DNS servers also help to provide resilience to DNS outages or failures by allowing client devices to continue to access DNS records from the cache even if the authoritative DNS server is unavailable.
+
+However, DNS caching can also lead to potential issues such as stale DNS records or DNS poisoning. To mitigate these issues, DNS administrators should monitor their DNS caches regularly, and implement security measures such as DNSSEC (DNS Security Extensions) to prevent DNS spoofing and other attacks.
+
+However, DNS caching can also lead to potential issues such as stale DNS records or DNS poisoning. To mitigate these issues, DNS administrators should monitor their DNS caches regularly, and implement security measures such as DNSSEC (DNS Security Extensions) to prevent DNS spoofing and other attacks.
+
+#### DNS Security
+
+Because DNS is such a critical part of the internet infrastructure, it is also a common target for cyberattacks. DNS attacks can take many forms, from DNS spoofing to DNS hijacking, as described above. DNSSEC (DNS Security Extensions) is a set of protocols designed to add an additional layer of security to the DNS lookup process. DNSSEC works by adding digital signatures to DNS records, which allows DNS clients to verify that the records they receive are authentic.
+
+Another common DNS security measure is DNS filtering, which is the process of blocking access to certain domains or IP addresses. DNS filtering is often used in corporate environments to prevent employees from accessing malicious websites or other inappropriate content.
