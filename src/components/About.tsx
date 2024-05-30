@@ -5,7 +5,7 @@ import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 
 const getAbout = ({ slug }: { slug: string }) => {
-    const writing = fs.readFileSync(path.join('content/about', slug + '.mdx'), 'utf-8');
+    const writing = fs.readFileSync(path.join('.content/about', slug + '.mdx'), 'utf-8');
     const {data: fontMatter, content} = matter(writing);
   
     return { fontMatter, slug, content };
