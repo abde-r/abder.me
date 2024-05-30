@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 
 export const getAllWritings = async (): Promise<any> => {
   try {
-    const contentDir = path.join(process.cwd(), 'content/writings');
+    const contentDir = path.join(process.cwd(), '.content/writings');
     const files = await fs.readdir(contentDir);
     const writings = await Promise.all(files.map(async (filename: any) => {
         const filePath: any = path.join(contentDir, filename);
