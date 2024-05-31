@@ -11,7 +11,7 @@ export const Writings = async () => {
         <Link
           key={index}
           href={`writings/${writing.slug}`}
-          className="flex shadow-[0_1px_5px_rgb(100,150,250,0.3)] hover:shadow-[0_1px_10px_rgb(100,150,250,0.3)] p-2 items-center rounded my-4 w-[60%] max-md:w-[80%] max-bsm:w-[95%]"
+          className="flex shadow-[5px_5px_0px_0px_#87a9d5] hover:shadow-[3px_3px_2px_0px_#87a9d5] rounded-xl p-2 border-2 border-[#bababa] ease-in-out hover:ease-in-out items-center my-4 w-[60%] max-md:w-[80%] max-bsm:w-[95%]"
         >
           <div className="p-3 bg-[#7694bc] mx-1 rounded-xl max-md:hidden">
             <IoNewspaper />

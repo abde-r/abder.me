@@ -3,8 +3,8 @@ import "../styles/globals.scss";
 import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "abdee",
-  description: "Personal Portfolio",
+  title: "abder",
+  description: "my Personal Portfolio",
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
@@ -13,7 +13,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
       <Head>
         <link rel="icon" type="image/svg+xml" href="favicon.ico" />
       </Head>
-      <body >{children}</body>
+      <body className="bg-gradient-to-r from-[#203547] to-[#1e3042] text-gray-200" >{children}</body>
     </html>
   );
 }
