@@ -13,7 +13,14 @@ export const getAllWritings = async (): Promise<any> => {
         return { meta: frontMatter, slug: filename.replace('.mdx', ''), content };
       })
     );
-    return writings;
+    
+    const publishedWritings = writings.filter(writing => writing.meta.published);
+
+    const sortedWritings = publishedWritings.sort((a, b) => {
+      return new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime();
+    });
+
+    return sortedWritings;
   }
   catch (err) {
     console.error('Error fetching writings! ', err);
