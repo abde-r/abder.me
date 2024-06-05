@@ -6,4 +6,7 @@
 
 NextJs   | Tailwind    | Tailwind Typography      | MDX            
 ---        | ---          | ---             | ---                 
+
+![alt img](./public/Screenshot%202024-06-05%20105137.png)
+
 </div>

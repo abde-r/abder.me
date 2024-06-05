@@ -17,7 +17,7 @@ export const getAllWritings = async (): Promise<any> => {
     const publishedWritings = writings.filter(writing => writing.meta.published);
 
     const sortedWritings = publishedWritings.sort((a, b) => {
-      return new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime();
+      return new Date(a.meta.date).getTime() - new Date(b.meta.date).getTime();
     });
 
     return sortedWritings;
