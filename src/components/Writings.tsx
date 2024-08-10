@@ -6,7 +6,7 @@ export const Writings = async () => {
   const writings: any = await getAllWritings();
 
   return (
-    <div id="blog" className="w-full mx-auto items-center flex flex-col font-fira font-normal text-base justify-center max-md:w-[95%] max-md:py-10">
+    <div id="blog" className="w-full mx-auto items-center flex flex-col font-fira font-normal text-base justify-center max-mxl:w-[95%] max-md:py-10">
       {writings.map((writing: any, index: number) => (
         <Link
           key={index}

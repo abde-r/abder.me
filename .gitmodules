@@ -4,3 +4,6 @@
 [submodule ".content"]
 	path = .content
 	url = https://github.com/stronkexe/.content.git
+[submodule ".cotent"]
+	path = .cotent
+	url = git@github.com:abde-r/.content.git
